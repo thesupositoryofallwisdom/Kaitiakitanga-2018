@@ -57,6 +57,7 @@ video{
 .footer{
     background-color: #420;
     padding: 30px;
+    padding-bottom: 75px
     
 }
 
@@ -97,4 +98,10 @@ hr{
 
 img{
     width: 100%;
+}
+
+/* Button Styling */
+.btn{
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
