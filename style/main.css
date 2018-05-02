@@ -66,7 +66,7 @@ video{
 }
 
 /* Navigation Menu*/
-.nav{
+#nav{
     background-color: #420;
     padding: 10px;
     text-align: center;
