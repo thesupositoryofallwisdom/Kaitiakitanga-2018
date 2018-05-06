@@ -1,56 +1,59 @@
 <!-- Section 2 Document -->
 <!doctype html>
 <html>
-    <head>
-        <!-- Mandatory stuff -->
-        <meta lang="eng">
-        <meta charset="UTF-8">
-        <title>Section 2</title>
-        <meta name="description" content="A simple action to promote good palm oil.">
 
-        <!-- Bootstrap stuff for responsive design -->
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- Mandatory stuff -->
+    <meta lang="eng">
+    <meta charset="UTF-8">
+    <title>Section 2</title>
+    <meta name="description" content="A simple action to promote good palm oil.">
 
-        <!-- Google Fonts for testing fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <!-- Bootstrap stuff for responsive design -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- JQuery -->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Google Fonts for testing fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
-        <!-- JavaScript -->
-        <script src="scripts/animation.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <!-- Our stylesheet (aka the most important)-->
-        <link rel="stylesheet" href="../../style/main.css">
+    <!-- JavaScript -->
+    <script src="../../scripts/fadein.js"></script>
 
-    </head>
+    <!-- Our stylesheet (aka the most important)-->
+    <link rel="stylesheet" href="../../style/main.css">
+
+</head>
 
 <body>
     <!--Navigation -->
-    <nav id="nav" class="testing navbar sticky-top" title="Navigation">
+    <nav id="nav" class="dropshadow testing navbar sticky-top" title="Navigation">
         <a href="../../index.html"><img class="col-lg-1 col-sm-1 col-xs-1 " src="../../images/youtube.svg" alt="Home"></a>
-        <a href="../../index.html" title="home"><h2>Appreciape</h2></a>
+        <a href="../../index.html" title="home">
+            <h2>Appreciape</h2>
+        </a>
     </nav>
 
     <!-- Video -->
     <div class="topvid" title="Video Container">
         <video class="container-fluid" autoplay>
-            <source src="video/testvideo.mp4" type="video/mp4">
+            <source src="../../video/testvideo.mp4" type="video/mp4">
             </video>
     </div>
-    
-<!-- Start Shit Here! -->
-<div class="section" id="sec_one" title="A Great Future">
-        <h2>Great things are possible.</h2>
-        <div class="container">
+
+    <!-- Start Shit Here! -->
+    <div id="sec1" class="section" title="Title">
+        <h2>The Headline</h2>
+        <div id="content1" class="container fadeout">
             <div class="row">
-                <!-- Motion Graphic -->
-                    <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
-                
+                <!-- Picture -->
+                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <p>Here's where some nice text will be.</p>
@@ -61,8 +64,41 @@
         <!-- Dividing Line -->
         <hr>
     </div>
-    
-    
+
+    <div id="sec2" class="section" title="Title">
+        <h2>The Headline</h2>
+        <div id="content2" class="container fadeout">
+            <div class="row">
+                <!-- Text -->
+                <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>Heres where some nice text will be.</p>
+                </div>
+
+                <!-- Picture -->
+                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+            </div>
+        </div>
+    <!-- Dividing Line -->
+    <hr>
+    </div>
+
+    <div id="sec3" class="section" title="Title">
+        <h2>The Headline</h2>
+        <div id="content3" class="container fadeout">
+            <div class="row">
+                <!-- Picture -->
+                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+
+                <!-- Text -->
+                <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>Here's where some nice text will be.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dividing Line -->
+        <hr>
+    </div>
 
     <!-- Footer -->
     <footer class="footer" title="Footer">
@@ -109,10 +145,7 @@
 
         <!-- Copyright -->
         <p>&copy; Leah Boyce, Kasey McDonnell, Kennedy McKay 2018.</p>
-
-        <!-- Scripts to Run -->
-
     </footer>
-</body>
-
+    </body>
 </html>
+
