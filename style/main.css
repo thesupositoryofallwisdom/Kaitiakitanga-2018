@@ -106,36 +106,12 @@ hr{
     margin:-5px;
 }
 
+/* Motion Graphic Styling */
+#video1, #video2, #video3, #video4{
+    box-shadow: 0px 5px 10px grey;
+}
 
 /* Animations */
-
-
-@keyframes scroll{
-    
+.check{
+    opacity: 0;
 }
-
-/* Motion Graphics*/
-
-.motionleft:hover{
-}
-
-.motionleft{
-    transition: 0.5s;
-}
-/*
-.motionleft{
-    animation-name: rightmove;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.motionright{
-    
-}
-
-@keyframes rightmove{
-    from { transform: translateX(400px);}
-    to { transform:translateX(100px);}
-}
-*/
