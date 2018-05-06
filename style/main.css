@@ -35,12 +35,7 @@ p{
     color: white; 
 }
 
-
 /* Section Styling */
-.title{
-    background-color: #420;
-    padding: 15px;
-}
 
 video{
     width: 100%;
@@ -113,10 +108,34 @@ hr{
 
 
 /* Animations */
+
+
 @keyframes scroll{
     
 }
 
-@keyframes sectiongraphic{
+/* Motion Graphics*/
+
+.motionleft:hover{
+}
+
+.motionleft{
+    transition: 0.5s;
+}
+/*
+.motionleft{
+    animation-name: rightmove;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.motionright{
     
 }
+
+@keyframes rightmove{
+    from { transform: translateX(400px);}
+    to { transform:translateX(100px);}
+}
+*/

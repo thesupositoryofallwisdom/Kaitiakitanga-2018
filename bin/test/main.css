@@ -1,0 +1,14 @@
+video{
+    margin: 10px;
+    width: 40%;
+    height: auto;
+    min-width: 600px;
+    float: left;
+}
+
+.text{
+    margin: 10px;
+    width: 60%;
+    height: auto;
+    float: right;
+}
