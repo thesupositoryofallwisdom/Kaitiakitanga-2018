@@ -1,11 +1,16 @@
 $(document).ready(function () {
     var distance = $("#sec1").offset().top,
         $window = $(window);
+        var = i;
+
 
     $window.scroll(function () {
-        if ($window.scrollTop() >= distance) {
-            // add a for here to stop it repeating
-            $("#content1").toggleClass("fadeout fadein", 2000);
+        for (var = 0; i < 1; i++) {
+            if ($window.scrollTop() >= distance) {
+                // add a for here to stop it repeating
+                $("#content1").toggleClass("fadeout fadein", 2000);
+                i = 2;
+            }
         }
     });
 });
