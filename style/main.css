@@ -147,5 +147,10 @@ hr{
 
 .picture{
     width: 100%;
+    height: 100%;
     
+}
+
+.check{
+    opacity: 0;
 }
