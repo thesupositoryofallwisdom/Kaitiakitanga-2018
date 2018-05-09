@@ -5,7 +5,7 @@ $(document).ready(function () {
     $window.scroll(function () {
         if ($window.scrollTop() >= distance2) {
             // add a for here to stop it repeating
-            $("#content1").removeClass("fadeout", 2000);
+            $("#content1").removeClass("fadeout", 1000);
         }
     });
 });
@@ -17,8 +17,7 @@ $(document).ready(function () {
     $window.scroll(function () {
         if ($window.scrollTop() >= distance2) {
             // add a for here to stop it repeating
-            $("#content2").removeClass("fadeout", 2000);
-            $("#content2").addClass("fadein", 2000);
+            $("#content2").removeClass("fadeout", 1000);
         }
     });
 });
@@ -30,8 +29,7 @@ $(document).ready(function () {
     $window.scroll(function () {
         if ($window.scrollTop() >= distance2) {
             // add a for here to stop it repeating
-            $("#content3").removeClass("fadeout", 2000);
-            $("#content3").addClass("fadein", 2000);
+            $("#content3").removeClass("fadeout", 1000);
         }
     });
 });
