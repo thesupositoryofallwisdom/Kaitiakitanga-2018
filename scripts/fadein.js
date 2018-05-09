@@ -1,40 +1,37 @@
 $(document).ready(function () {
-    var distance = $("#sec1").offset().top,
-        $window = $(window);
-        var = i;
-
-
-    $window.scroll(function () {
-        for (var = 0; i < 1; i++) {
-            if ($window.scrollTop() >= distance) {
-                // add a for here to stop it repeating
-                $("#content1").toggleClass("fadeout fadein", 2000);
-                i = 2;
-            }
-        }
-    });
-});
-
-$(document).ready(function () {
-    var distance2 = $("#sec2").offset().top,
+    var distance2 = $("#sec1").offset().top -100,
         $window = $(window);
 
     $window.scroll(function () {
         if ($window.scrollTop() >= distance2) {
             // add a for here to stop it repeating
-            $("#content2").toggleClass("fadeout fadein", 2000);
+            $("#content1").removeClass("fadeout", 2000);
         }
     });
 });
 
 $(document).ready(function () {
-    var distance3 = $("#sec3").offset().top,
+    var distance2 = $("#sec2").offset().top -100,
         $window = $(window);
 
     $window.scroll(function () {
-        if ($window.scrollTop() >= distance3) {
+        if ($window.scrollTop() >= distance2) {
             // add a for here to stop it repeating
-            $("#content3").toggleClass("fadeout fadein", 2000);
+            $("#content2").removeClass("fadeout", 2000);
+            $("#content2").addClass("fadein", 2000);
+        }
+    });
+});
+
+$(document).ready(function () {
+    var distance2 = $("#sec3").offset().top -100,
+        $window = $(window);
+
+    $window.scroll(function () {
+        if ($window.scrollTop() >= distance2) {
+            // add a for here to stop it repeating
+            $("#content3").removeClass("fadeout", 2000);
+            $("#content3").addClass("fadein", 2000);
         }
     });
 });
