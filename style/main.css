@@ -133,6 +133,7 @@ hr{
 .social{
     padding: 0;
     margin:-5px;
+    max-height:70px;
 }
 
 /* Main Page Motion Graphic Animation Murtaugh */
