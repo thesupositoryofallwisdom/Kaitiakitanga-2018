@@ -25,6 +25,8 @@
     <!-- Scripts -->
     <script src="scripts/animation.js"></script>
     <script src="scripts/scrolling.js"></script>
+    <script src="scripts/sectionautoplay.js"></script>
+
 
     <!-- Our stylesheet (aka the most important)-->
     <link rel="stylesheet" href="style/main.css">
@@ -32,6 +34,11 @@
 </head>
 
 <body>
+    <!-- Overlay -->
+   <div id="overlay">
+    <h2 id="toptext">Save the rainforest. <br>Buy Appreciape.</h2>   
+   </div>
+   
     <!-- Video -->
     <div class="topvid" title="Video Container">
         <video id="topvid" class="container-fluid blur">
@@ -41,10 +48,10 @@
 
     <!--Navigation -->
     <nav id="nav" class="dropshadow testing navbar sticky-top" title="Navigation">
-        <a class="link" href="#sec_one" title="Section One">A Great Future</a>
-        <a class="link" href="#sec_two" title="Section Two">The Dystopic Present</a>
-        <a class="link" href="#sec_three" title="Section Three">The Consequences</a>
-        <a class="link" href="#sec_four" title="Section Four">Appreciape</a>
+        <a class="link" id="link1" href="#sec_one" title="Section One">A Great Future</a>
+        <a class="link" id="link2" href="#sec_two" title="Section Two">The Dystopic Present</a>
+        <a class="link" id="link3" href="#sec_three" title="Section Three">The Consequences</a>
+        <a class="link" id="link4" href="#sec_four" title="Section Four">Appreciape</a>
     </nav>
 
     <!-- Section One -->

@@ -29,13 +29,13 @@ $(document).ready(function () {
     });
 
     //topvid cancel blur and remove Appreciape and Play
-    $("#topvid").on("click", function (){
-        $("#topvid").animate({filter:"blur(0)"}, {duration: 500}).removeClass("blur");
+    $("#topvid").on("click", function () {
+        $("#topvid").removeClass("blur");
         //Remove Appreciape Logo and Play Button
-        setTimeout( function(){
+        setTimeout(function () {
             document.getElementById("topvid").play();
         }, 500);
     });
-    
+
     //on video ending, blur again and add appreciape and play
 });
