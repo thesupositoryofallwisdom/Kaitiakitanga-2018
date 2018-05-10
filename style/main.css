@@ -43,8 +43,16 @@ video{
     padding: 0;
 }
 
+.blur{
+     -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
 .topvid{
-    background-color: black;
+    background-color: white;
 }
 
 .section{
