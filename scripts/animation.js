@@ -41,6 +41,4 @@ $(document).ready(function () {
         var aid = $("#link1").attr("href");
         $('html,body').delay(1000).animate({scrollTop: ($(aid).offset().top -70)},1500);
     });
-
-    //on video ending, blur again and add appreciape and play
 });
