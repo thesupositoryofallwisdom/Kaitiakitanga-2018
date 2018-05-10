@@ -30,11 +30,16 @@ $(document).ready(function () {
 
     //topvid cancel blur and remove Appreciape and Play
     $("#topvid").on("click", function () {
-        $("#topvid").removeClass("blur");
+        $("#overlay").css("opacity", "0", 3000);
         //Remove Appreciape Logo and Play Button
         setTimeout(function () {
             document.getElementById("topvid").play();
         }, 500);
+    });
+    $("#topvid").on("ended", function(){
+        $("#overlay").delay(500).css("opacity", "100", 3000);
+        var aid = $("#link1").attr("href");
+        $('html,body').delay(1000).animate({scrollTop: ($(aid).offset().top -70)},1500);
     });
 
     //on video ending, blur again and add appreciape and play
