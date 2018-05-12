@@ -1,9 +1,14 @@
 /*Text Formatting */
+
+body{
+    background-color: #ffe7c7;
+}
+
 h1{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 32pt;
-    color: #fff;
+    color: #aa481e;
     font-weight: 800;
 }
 
@@ -17,6 +22,7 @@ h2{
 .section h2{
     text-align: center;
     padding-bottom: 20px;
+    color: #6dae18;
 }
 
 p{
@@ -32,7 +38,7 @@ p{
 
 
 .footer h2, p{
-    color: white; 
+    color: #ffe7c7; 
 }
 
 /* Section Styling */
@@ -46,6 +52,9 @@ video{
 
 .topvid{
     background-color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .section{
@@ -55,7 +64,7 @@ video{
 }
 
 .footer{
-    background-color: #420;
+    background-color: #aa481e;
     padding: 30px;
     padding-bottom: 75px
     
@@ -68,32 +77,31 @@ video{
 hr{
     height: 3px;
     border: 0 none;
-    background-color: black;    
+    background-color: #aa481e;    
 }
 
 /* Overlay */
-#toptext{
+.overlay{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    font-size: 50px;
-    color: white;
+    top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    
+}
+
+.overlay h2{
+    color: white;
+}
+
+.overlay img{
+    padding-bottom: 0px;
 }
 
 /* Navigation Menu*/
-#subnav{
-    background-color: #420;
-}
-
 #nav{
-    background-color: #420;
-    padding: 0;
-    text-align: left;
-    display: block;
-    text-align: center;
+    background-color: #aa481e;
 }
 
 .logo{
@@ -114,26 +122,9 @@ hr{
     font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     font-weight: 800;
-    color: white;
+    color: #ffe7c7;
     text-decoration: none;
 }
-
-.sublink{
-    /* aligning it right */
-    text-align: center;
-    padding-left: 0;
-    padding-right: 15px;
-    align-content: left;
-    text-align: center;
-    
-    /*font murtaugh */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20pt;
-    font-weight: 800;
-    color: white;
-    text-decoration: none;
-}
-
 
 /* Button Styling */
 .btn{
