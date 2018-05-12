@@ -43,7 +43,7 @@ $(document).ready(function () {
         $("#overlay").delay(500).removeClass("transparent").addClass("opaque");
         $("#topvid").removeClass("notblur");
         $("#topvid").addClass("blur");
-        var aid = $("#link1").attr("href");
+        var aid = $("#sec_one");
         $('html,body').delay(1000).animate({scrollTop: ($(aid).offset().top -70)},1500);
     });
 });

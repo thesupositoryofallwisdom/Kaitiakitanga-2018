@@ -23,6 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <!-- JavaScript -->
+    <script src="scripts/animation.js"></script>
     <script src="scripts/fadein.js"></script>
 
     <!-- Our stylesheet (aka the most important)-->
@@ -37,19 +38,24 @@
     </nav>
     
     <!-- Video -->
-    <div class="topvid" title="Video Container">
-        <video class="container-fluid" autoplay>
-            <source src="video/testvideo.mp4" type="video/mp4">
-            </video>
+    <div class="headvideo" title="Video Container">
+        <video id="topvid" class="container-fluid blur">
+            <source id="videosource" src="video/testvideo.mp4" type="video/mp4">
+        </video>
+        <div id="overlay" class="overlay opaque">
+            <img src="images/play.svg" class="col-3">
+        </div>
     </div>
 
     <!-- Start Shit Here! -->
-    <div id="sec1" class="section" title="Title">
+    <div id="sec_one" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content1" class="container fadeout">
             <div class="row">
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="images/palm-dude_3.gif">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/palm-dude_3.gif">
+                </div>
 
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -62,7 +68,7 @@
         <hr>
     </div>
 
-    <div id="sec2" class="section" title="Title">
+    <div id="sec_two" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content2" class="container fadeout">
             <div class="row">
@@ -72,19 +78,23 @@
                 </div>
 
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="images/palm-dude_3.gif">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/palm-dude_3.gif">
+                </div>
             </div>
         </div>
     <!-- Dividing Line -->
     <hr>
     </div>
 
-    <div id="sec3" class="section" title="Title">
+    <div id="sec_three" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content3" class="container fadeout">
             <div class="row">
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="images/palm-dude_3.gif">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/palm-dude_3.gif">
+                </div>
 
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -92,9 +102,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- Dividing Line -->
-        <hr>
+        <!-- Padding -->
+        <div class="padding"></div>
     </div>
 
     <!-- Footer -->
@@ -145,4 +154,3 @@
     </footer>
     </body>
 </html>
-

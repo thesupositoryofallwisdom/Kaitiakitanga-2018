@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var distance2 = $("#sec1").offset().top -100;
+    var distance2 = $("#sec_one").offset().top -100;
         $window = $(window);
 
     $window.scroll(function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var distance2 = $("#sec2").offset().top -100;
+    var distance2 = $("#sec_two").offset().top -100;
         $window = $(window);
 
     $window.scroll(function () {
@@ -21,7 +21,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var distance2 = $("#sec3").offset().top -100;
+    var distance2 = $("#sec_three").offset().top -100;
         $window = $(window);
 
     $window.scroll(function () {
