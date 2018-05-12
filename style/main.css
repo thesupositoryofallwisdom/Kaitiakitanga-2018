@@ -50,8 +50,8 @@ video{
     padding-right: 0;
 }
 
-.topvid{
-    background-color: white;
+.headvideo{
+    background-color: black;
     position: relative;
     width: 100%;
     height: auto;
@@ -167,4 +167,26 @@ hr{
 
 .check{
     opacity: 0;
+}
+
+
+/* blur */
+.blur{
+    filter: blur(15px);
+    transition-duration: 1s;
+}
+
+.notblur{
+    filter: blur(0px);
+    transition-duration: 1s;
+}
+
+.opaque{
+    opacity: 100%;
+    transition-duration: 1s;
+}
+
+.transparent{
+    opacity: 0;
+    transition-duration: 1s;
 }

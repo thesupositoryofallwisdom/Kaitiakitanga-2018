@@ -28,16 +28,21 @@ $(document).ready(function () {
         $("#motion4").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500);
     });
 
+    
     //topvid cancel blur and remove Appreciape and Play
-    $("#topvid").on("click", function () {
-        $("#overlay").css("opacity", "0", 3000);
-        //Remove Appreciape Logo and Play Button
+    $("#overlay").on("click", function () {
+        $("#overlay").removeClass("opaque");
+        $("#overlay").addClass("transparent");
+        $("#topvid").removeClass("blur");
+        $("#topvid").addClass("notblur");
         setTimeout(function () {
             document.getElementById("topvid").play();
         }, 500);
     });
     $("#topvid").on("ended", function(){
-        $("#overlay").delay(500).css("opacity", "100", 3000);
+        $("#overlay").delay(500).removeClass("transparent").addClass("opaque");
+        $("#topvid").removeClass("notblur");
+        $("#topvid").addClass("blur");
         var aid = $("#link1").attr("href");
         $('html,body').delay(1000).animate({scrollTop: ($(aid).offset().top -70)},1500);
     });
