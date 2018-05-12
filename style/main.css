@@ -84,18 +84,16 @@ hr{
 }
 
 /* Navigation Menu*/
-#nav{
+#subnav{
     background-color: #420;
-    padding: 10px;
-    text-align: center;
-    display: block;
 }
 
-#subnav{
+#nav{
     background-color: #420;
     padding: 0;
     text-align: left;
     display: block;
+    text-align: center;
 }
 
 .logo{

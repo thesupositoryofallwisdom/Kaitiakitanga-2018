@@ -12,16 +12,21 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap JavaScript Plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
     <!-- Google Fonts for testing fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
-    
+
     <!-- JQuery -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <!-- Scripts -->
     <script src="scripts/animation.js"></script>
     <script src="scripts/scrolling.js"></script>
@@ -35,10 +40,10 @@
 
 <body>
     <!-- Overlay -->
-   <div id="overlay">
-    <h2 id="toptext">Save the rainforest. <br>Buy Appreciape.</h2>   
-   </div>
-   
+    <div id="overlay">
+        <h2 id="toptext">Save the rainforest. <br>Buy Appreciape.</h2>
+    </div>
+
     <!-- Video -->
     <div class="topvid" title="Video Container">
         <video id="topvid" class="container-fluid blur">
@@ -46,13 +51,47 @@
             </video>
     </div>
 
-    <!--Navigation -->
+    <!-- New Navigation -->
+
+    <nav id="nav" class="dropshadow testing navbar navbar-expand-lg  sticky-top">
+        <a class="navbar-brand" href="#"> <img src="images/instagram.svg" width="50" height="50" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="navbar-toggler-icon" src="images/hamburger.svg"> <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item link">
+                    <a id="link1" class="link nav-link" href="#sec_one" title="Section One">A Great Future</a>
+                </li>
+
+                <li class="nav-item link">
+                    <a id="link2" class="link nav-link" href="#sec_two" title="Section Two">The Dystopic Present</a>
+                </li>
+
+                <li class="nav-item link">
+                    <a id="link3" class="link nav-link" href="#sec_three" title="Section Three">The Consequences</a>
+                </li>
+
+                <li class="nav-item link">
+                    <a id="link4" class="link nav-link" href="#sec_four" title="Section Four">Appreciape</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--Old Navigation
     <nav id="nav" class="dropshadow testing navbar sticky-top" title="Navigation">
         <a class="link" id="link1" href="#sec_one" title="Section One">A Great Future</a>
         <a class="link" id="link2" href="#sec_two" title="Section Two">The Dystopic Present</a>
+        <a class="link" id="home" href="index.html" title="Home Brand Icon"><img class="logo" src="images/youtube.svg" alt="Home"></a>
         <a class="link" id="link3" href="#sec_three" title="Section Three">The Consequences</a>
         <a class="link" id="link4" href="#sec_four" title="Section Four">Appreciape</a>
     </nav>
+    
+    -->
 
     <!-- Section One -->
     <div class="section" id="sec_one" title="A Great Future">
@@ -65,7 +104,7 @@
                             <source src="video/testvideo.mp4" type="video/mp4">
                         </video>
                 </div>
-                
+
                 <!-- Text -->
                 <div id="text1" class="check">
                     <p>We all want a better future for orangutans and the rainforest. We want to live our lives mindfully, without ruining the environment with unsustainable palm oil. It can be hard to know whether what we buy is good or bad for animals like these, but luckily the Appreciape Stamp is here to help us live the sustainable lives we want.</p>
@@ -113,7 +152,7 @@
                             <source src="video/testvideo.mp4" type="video/mp4">
                         </video>
                 </div>
-                
+
                 <!-- Text -->
                 <div id="text3" class="check">
                     <p>Because of the way palm oil is being made, our friendly orangutan have lost 90% of their habitat to palm oil. Animals like the orangutan are killed or sold into the pet trade. It also devastates other animals like rhinos, tigers and elephants. But we can show them that shitty practices like these are not on.</p>

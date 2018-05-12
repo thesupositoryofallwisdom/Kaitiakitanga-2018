@@ -14,13 +14,13 @@ $(document).ready(function () {
     $window = $(window);
     
     $window.scroll(function () {
-        if ($window.scrollTop() >= viddistance && $window.scrollTop() <= viddistance2) {
+        if ($window.scrollTop() >= viddistance) {
             document.getElementById("video1").play();
         }
-        if ($window.scrollTop() >= viddistance2 && $window.scrollTop() <= viddistance3) {
+        if ($window.scrollTop() >= viddistance2) {
             document.getElementById("video2").play();
         }
-        if ($window.scrollTop() >= viddistance3 && $window.scrollTop() <= viddistance4) {
+        if ($window.scrollTop() >= viddistance3) {
             document.getElementById("video3").play();
         }
         if ($window.scrollTop() >= viddistance4) {
