@@ -130,6 +130,18 @@ hr{
 .btn{
     margin-right: 10px;
     margin-bottom: 15px;
+    outline: none;
+
+}
+
+.btn-primary{
+    background-color: #aa481e;
+    color: #ffe7c7;
+}
+
+.btn-light{
+    background-color: #ffe7c7;
+    color: #aa481e;
 }
 
 .social{
