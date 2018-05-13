@@ -11,7 +11,7 @@
 
     <!-- Bootstrap stuff for responsive design -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Fonts for testing fonts -->
@@ -23,36 +23,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <!-- JavaScript -->
-    <script src="../../scripts/fadein.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/fadein.js"></script>
 
     <!-- Our stylesheet (aka the most important)-->
-    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="style/main.css">
 
 </head>
 
 <body>
     <!--Navigation -->
-    <nav id="nav" class="dropshadow testing navbar sticky-top" title="Navigation">
-        <a href="../../index.html"><img class="col-lg-1 col-sm-1 col-xs-1 " src="../../images/youtube.svg" alt="Home"></a>
-        <a href="../../index.html" title="home">
-            <h2>Appreciape</h2>
-        </a>
+    <nav id="nav" class="dropshadow testing navbar navbar-expand-lg  sticky-top">
+        <a class="link navbar-brand" href="index.html"><img src="images/logo.svg" width="50" height="50" alt=""> Appreciape</a>
     </nav>
 
     <!-- Video -->
-    <div class="topvid" title="Video Container">
-        <video class="container-fluid" autoplay>
-            <source src="../../video/testvideo.mp4" type="video/mp4">
-            </video>
+    <div class="headvideo" title="Video Container">
+        <video id="topvid" class="container-fluid blur">
+            <source id="videosource" src="video/section4video.mp4" type="video/mp4">
+        </video>
+        <div id="overlay" class="overlay opaque">
+            <img src="images/play.svg" class="col-3">
+        </div>
     </div>
 
     <!-- Start Shit Here! -->
-    <div id="sec1" class="section" title="Title">
+    <div id="sec_one" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content1" class="container fadeout">
             <div class="row">
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+                <div class="videopadding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/Section4/image1.gif">
+                </div>
 
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -65,7 +68,7 @@
         <hr>
     </div>
 
-    <div id="sec2" class="section" title="Title">
+    <div id="sec_two" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content2" class="container fadeout">
             <div class="row">
@@ -75,19 +78,23 @@
                 </div>
 
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+                <div class="videopadding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/Section4/image2.gif">
+                </div>
             </div>
         </div>
-    <!-- Dividing Line -->
-    <hr>
+        <!-- Dividing Line -->
+        <hr>
     </div>
 
-    <div id="sec3" class="section" title="Title">
+    <div id="sec_three" class="section" title="Title">
         <h2>The Headline</h2>
         <div id="content3" class="container fadeout">
             <div class="row">
                 <!-- Picture -->
-                <img class="dropshadow col-lg-6 col-md-6 col-sm-12 col-xs-12 picture" src="../../images/placeholder.jpg">
+                <div class="videopadding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="dropshadow picture" src="images/Section4/image3.gif">
+                </div>
 
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -95,20 +102,19 @@
                 </div>
             </div>
         </div>
-
-        <!-- Dividing Line -->
-        <hr>
+        <!-- Padding -->
+        <div class="padding"></div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer" title="Footer">
+    <footer id="footer" class="footer" title="Footer">
         <div class="container">
             <div class="row">
 
                 <!-- Pledge Box -->
                 <div class="col-lg-6 col-sm-6 col-xs-6" title="Pledge">
                     <h2>Sign the Pledge</h2>
-                    <p>I pledge to only buy Appreciape approved.</p>
+                    <p>Pledge to buy sustainable palm oil.</p>
                     <form>
                         <div class="form-group">
                             <input type="name" class="form-control" id="name" aria-describedby="Name" placeholder="Full Name">
@@ -116,36 +122,35 @@
                         <div class="form-group">
                             <input type="email" class="form-control" id="emailaddress" placeholder="Email Address">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="pledge.html"><button type="submit" class="btn btn-light">Submit</button></a>
                     </form>
-                    <!-- A Name and Email box -->
-                    <!-- A sign up button -->
                 </div>
 
                 <!-- Donations & Social -->
                 <div class="col-lg-6 col-sm-6 col-xs-6" title="Donate & Social">
                     <!-- Donations -->
                     <h2>Donate</h2>
-                    <p>Donate to preserve our rainforests further.</p>
-                    <button type="button" class="btn btn-light">$5</button>
-                    <button type="button" class="btn btn-light">$10</button>
-                    <button type="button" class="btn btn-light">$20</button>
-                    <button type="button" class="btn btn-light">Other</button>
+                    <p>Donate to further preserve our rainforests.</p>
+                    <a href="donate.html"><button type="button" class="btn btn-light">$5</button></a>
+                    <a href="donate.html"><button type="button" class="btn btn-light">$10</button></a>
+                    <a href="donate.html"><button type="button" class="btn btn-light">$20</button></a>
+                    <a href="donate.html"><button type="button" class="btn btn-light">Other</button></a>
 
                     <!-- Social Media -->
                     <h2>Keep in Touch</h2>
 
                     <!-- Social Media Buttons -->
-                    <a href="https://twitter.com/ZoosVictoria"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="../../images/twitter.svg" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/zoosvictoria/"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="../../images/instagram.svg" alt="Instagram"></a>
-                    <a href="https://www.youtube.com/user/ZoosVictoria"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="../../images/youtube.svg" alt="YouTube"></a>
+                    <a href="https://twitter.com/ZoosVictoria"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/zoosvictoria/"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/user/ZoosVictoria"><img class="col-lg-2 col-sm-2 col-xs-1 social" src="images/youtube.svg" alt="YouTube"></a>
+
                 </div>
             </div>
         </div>
 
         <!-- Copyright -->
         <p>&copy; Leah Boyce, Kasey McDonnell, Kennedy McKay 2018.</p>
-    </footer>
-    </body>
-</html>
 
+    </footer>
+</body>
+</html>

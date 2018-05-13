@@ -15,7 +15,6 @@ h1{
 h2{
     font-family: 'Open Sans', sans-serif;
     font-size: 32pt;
-    color: #000000;
     font-weight: 800;
 }
 
@@ -23,6 +22,10 @@ h2{
     text-align: center;
     padding-bottom: 20px;
     color: #6dae18;
+}
+
+#overlay h2{
+    color: #ffe7c7;
 }
 
 p{
@@ -41,8 +44,7 @@ p{
     color: #ffe7c7; 
 }
 
-/* Section Styling */
-
+/* Top Video Styles */
 video{
     width: 100%;
     height: auto;
@@ -57,6 +59,17 @@ video{
     height: auto;
 }
 
+.videopadding{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/* Section Styling */
 .section{
     padding-top: 20px;
     margin-left: 30px;
@@ -104,6 +117,7 @@ hr{
 /* Navigation Menu*/
 #nav{
     background-color: #aa481e;
+    padding: 0px 0px 0px 10px;
 }
 
 .logo{
@@ -144,6 +158,15 @@ hr{
 .btn-light{
     background-color: #ffe7c7;
     color: #aa481e;
+}
+
+.btn-primary:hover{
+    background-color: #6dae18;
+    color: #ffe7c7;
+}
+.btn-light:hover{
+    background-color: #6dae18;
+    color: #ffe7c7;
 }
 
 .social{
@@ -191,4 +214,8 @@ hr{
 .transparent{
     opacity: 0;
     transition-duration: 1s;
+}
+
+.link:hover{
+    color: #6dae18;
 }
