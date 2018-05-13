@@ -219,3 +219,10 @@ hr{
 .link:hover{
     color: #6dae18;
 }
+
+.formstyle{
+    background-color: #aa481e;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: white;
+}
