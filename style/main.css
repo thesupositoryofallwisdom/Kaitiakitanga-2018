@@ -78,9 +78,7 @@ video{
 
 .footer{
     background-color: #aa481e;
-    padding: 30px;
-    padding-bottom: 75px
-    
+    padding: 30px;    
 }
 
 .padding{
@@ -171,7 +169,7 @@ hr{
 
 .social{
     padding: 0;
-    margin:-5px;
+    margin: 10px;
     max-height:70px;
 }
 
@@ -224,5 +222,10 @@ hr{
     background-color: #aa481e;
     padding: 15px;
     margin-bottom: 30px;
-    color: white;
+    color: #ffe7c7;
+}
+
+.nomargin{
+    margin: 0;
+    padding: 0;
 }
