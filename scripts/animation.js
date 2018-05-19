@@ -2,30 +2,44 @@
 $(document).ready(function () {
     //Section One Video
     $('#video1').one('ended', function () {
-        $("#text1").toggleClass("check col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500, "linear");
-        $("#text1").css("opacity", "100", 3000);
-        $("#motion1").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500);
+        if ($(window).width()>= 768 ){
+            $("#motion1").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 3000);
+            $("#text1").delay(3000).toggleClass("col-lg-6 col-md-6 col-sm-12 col-xs-12", 200, "linear");
+            $("#text1").removeClass("noheight", 200);
+            $("#text1").delay(200).removeClass("hidetext", 1000);
+        } else{
+            $("#text1").removeClass("noheight", 1000);
+            $("#text1").addClass("col-sm-12");
+            $("#text1").delay(200).removeClass("hidetext", 1000);
+        }
     });
 
     //Section Two Video
     $('#video2').one('ended', function () {
-        $("#text2").toggleClass("check col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500, "linear");
-        $("#text2").css("opacity", "100", 3000);
-        $("#motion2").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500);
+        if ($(window).width()>= 768 ){
+            $("#motion2").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 3000);
+            $("#text2").delay(3000).toggleClass("col-lg-6 col-md-6 col-sm-12 col-xs-12", 200, "linear");
+            $("#text2").removeClass("noheight", 200);
+            $("#text2").delay(200).removeClass("hidetext", 1000);
+        } else{
+            $("#text2").removeClass("noheight", 1000);
+            $("#text2").addClass("col-sm-12");
+            $("#text2").delay(200).removeClass("hidetext", 1000);
+        }
     });
-
+    
     //Section Three Video
     $('#video3').one('ended', function () {
-        $("#text3").toggleClass("check col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500, "linear");
-        $("#text3").css("opacity", "100", 3000);
-        $("#motion3").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500);
-    });
-
-    //Section Four Video
-    $('#video4').one('ended', function () {
-        $("#text4").toggleClass("check col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500, "linear");
-        $("#text4").css("opacity", "100", 3000);
-        $("#motion4").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 4500);
+        if ($(window).width()>= 768 ){
+            $("#motion3").toggleClass("col col-lg-6 col-md-6 col-sm-12 col-xs-12", 3000);
+            $("#text3").delay(3000).toggleClass("col-lg-6 col-md-6 col-sm-12 col-xs-12", 200, "linear");
+            $("#text3").removeClass("noheight", 200);
+            $("#text3").delay(200).removeClass("hidetext", 1000);
+        } else{
+            $("#text3").removeClass("noheight", 1000);
+            $("#text3").addClass("col-sm-12");
+            $("#text3").delay(200).removeClass("hidetext", 1000);
+        }
     });
 
     

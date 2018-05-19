@@ -1,5 +1,7 @@
-/*Text Formatting */
+/* Bootstrap */
 
+
+/*Text Formatting */
 body{
     background-color: #ffe7c7;
 }
@@ -44,6 +46,10 @@ p{
     color: #ffe7c7; 
 }
 
+
+
+
+
 /* Top Video Styles */
 video{
     width: 100%;
@@ -67,32 +73,6 @@ video{
 
 
 
-
-
-/* Section Styling */
-.section{
-    padding-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.footer{
-    background-color: #aa481e;
-    padding: 30px;    
-}
-
-.padding{
-    padding-bottom:15px;
-}
-
-hr{
-    height: 3px;
-    border: 0 none;
-    background-color: #aa481e;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 /* Overlay */
 .overlay{
     position: absolute;
@@ -112,6 +92,10 @@ hr{
     padding-bottom: 0px;
 }
 
+
+
+
+
 /* Navigation Menu*/
 #nav{
     background-color: #aa481e;
@@ -123,6 +107,7 @@ hr{
     height: 0.1%;
     max-height: 70px;
     width: auto;
+    position: absolute;
 }
 
 .link{
@@ -139,6 +124,49 @@ hr{
     color: #ffe7c7;
     text-decoration: none;
 }
+
+.brandstamp{
+    float: left;
+    width: 50px;
+    height: 50px;  
+    margin-right: 50px;
+}
+
+.brandstamp img{
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+    margin: -30px 0 0 0;
+}
+
+
+
+
+/* Section Styling */
+.section{
+    padding-top: 20px;
+}
+
+.footer{
+    background-color: #aa481e;
+    padding: 30px;    
+}
+
+.padding{
+    padding-bottom:15px;
+}
+
+hr{
+    height: 3px;
+    border: 0 none;
+    background-color: rgb(245, 223, 192);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
 
 /* Button Styling */
 .btn{
@@ -167,6 +195,10 @@ hr{
     color: #ffe7c7;
 }
 
+
+
+
+/* Aesthetic Styling */
 .social{
     padding: 0;
     margin: 10px;
@@ -188,9 +220,25 @@ hr{
     
 }
 
-.check{
+.hidetext{
     opacity: 0;
 }
+
+.noheight{
+    height: 0;
+
+}
+
+.seetext{
+    opacity: 100;
+}
+
+.nopadding{
+    padding: 0;
+}
+
+
+
 
 
 /* blur */
