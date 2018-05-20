@@ -59,12 +59,15 @@ video{
 }
 
 .headvideo{
-    background-color: black;
+    background-color: none;
     position: relative;
     width: 100%;
-    height: auto;
 }
 
+.container-fluid{
+        padding-right: 0;
+    padding-left: 0;
+}
 .videopadding{
     margin-bottom: 15px;
 }
