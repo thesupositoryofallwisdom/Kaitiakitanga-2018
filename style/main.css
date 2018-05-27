@@ -1,12 +1,12 @@
 /* Bootstrap */
 
-
 /*Text Formatting */
-body{
+
+body {
     background-color: #ffe7c7;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 32pt;
@@ -14,62 +14,71 @@ h1{
     font-weight: 800;
 }
 
-h2{
+h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 32pt;
     font-weight: 800;
 }
 
-.section h2{
+.section h2 {
     text-align: center;
     padding-bottom: 20px;
     color: #6dae18;
 }
 
-#overlay h2{
+#overlay h2 {
     color: #ffe7c7;
 }
 
-p{
+p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     color: black;
     font-weight: 400;
 }
 
-.section p{
+.section p {
     color: black;
 }
 
 
-.footer h2, p{
-    color: #ffe7c7; 
+.footer h2,
+p {
+    color: #ffe7c7;
 }
+
+
 
 
 
 
 
 /* Top Video Styles */
-video{
+
+video {
     width: 100%;
     height: auto;
     padding-left: 0;
     padding-right: 0;
 }
 
-.headvideo{
+.headvideo {
     background-color: none;
     position: relative;
     width: 100%;
 }
 
-.container-fluid{
-        padding-right: 0;
+.container-fluid {
+    padding-right: 0;
     padding-left: 0;
 }
-.videopadding{
+
+.videopadding {
     margin-bottom: 15px;
+}
+
+  .container{
+    padding: 0 20px 0 20px;
 }
 
 
@@ -77,21 +86,23 @@ video{
 
 
 /* Overlay */
-.overlay{
+
+.overlay {
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
     height: auto;
     text-align: center;
-    
+
 }
 
-.overlay h2{
+.overlay h2 {
     color: white;
 }
 
-.overlay img{
+.overlay img {
     padding-bottom: 0px;
 }
 
@@ -100,12 +111,42 @@ video{
 
 
 /* Navigation Menu*/
-#nav{
+
+#nav {
     background-color: #aa481e;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
 }
 
-.logo{
+@media (max-width: 991px){
+    #nav{
+        padding: 0px 0px 0px 90.47px;
+
+    }
+
+    .navbar-nav{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px){
+    .brandstamp{
+            float: left;
+    }    
+    
+}
+
+.centremargin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centrenav{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.logo {
     padding-left: 0;
     height: 0.1%;
     max-height: 70px;
@@ -113,13 +154,13 @@ video{
     position: absolute;
 }
 
-.link{
-    /* aligning it right */
+.link {
+    /* aligning it */
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     align-content: center;
-    
+
     /*font murtaugh */
     font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
@@ -128,38 +169,39 @@ video{
     text-decoration: none;
 }
 
-.brandstamp{
-    float: left;
-    width: 50px;
-    height: 50px;  
-    margin-right: 50px;
+.brandstamp {
+    width: 100px;
+    height: 50px;
 }
 
-.brandstamp img{
+.navimg {
     width: 100px;
     height: 100px;
-    overflow: visible;
     margin: -30px 0 0 0;
+    align-content: right;
 }
+
+
 
 
 
 
 /* Section Styling */
-.section{
+
+.section {
     padding-top: 20px;
 }
 
-.footer{
+.footer {
     background-color: #aa481e;
-    padding: 30px;    
+    padding: 30px;
 }
 
-.padding{
-    padding-bottom:15px;
+.padding {
+    padding-bottom: 15px;
 }
 
-hr{
+hr {
     height: 3px;
     border: 0 none;
     background-color: rgb(245, 223, 192);
@@ -172,28 +214,30 @@ hr{
 
 
 /* Button Styling */
-.btn{
+
+.btn {
     margin-right: 10px;
     margin-bottom: 15px;
     outline: none;
 
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #aa481e;
     color: #ffe7c7;
 }
 
-.btn-light{
+.btn-light {
     background-color: #ffe7c7;
     color: #aa481e;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #6dae18;
     color: #ffe7c7;
 }
-.btn-light:hover{
+
+.btn-light:hover {
     background-color: #6dae18;
     color: #ffe7c7;
 }
@@ -202,81 +246,83 @@ hr{
 
 
 /* Aesthetic Styling */
-.social{
+
+.social {
     padding: 0;
     margin: 10px;
-    max-height:70px;
+    max-height: 70px;
 }
 
 /* Main Page Motion Graphic Animation Murtaugh */
-.dropshadow{
+
+.dropshadow {
     box-shadow: 0px 5px 10px grey;
 }
 
-.fadeout{
+.fadeout {
     opacity: 0;
 }
 
-.picture{
+.picture {
+    width: 100%;
+    height: auto;
+
+}
+
+.productpicture{
     width: 100%;
     height: 100%;
-    
 }
 
-.hidetext{
+.hidetext {
     opacity: 0;
 }
 
-.noheight{
+.noheight {
     height: 0;
 
 }
 
-.seetext{
+.seetext {
     opacity: 100;
 }
 
-.nopadding{
+.nopadding {
     padding: 0;
 }
 
-
-
-
-
-/* blur */
-.blur{
+.blur {
     filter: blur(15px);
     transition-duration: 1s;
 }
 
-.notblur{
+.notblur {
     filter: blur(0px);
     transition-duration: 1s;
 }
 
-.opaque{
+.opaque {
     opacity: 100%;
     transition-duration: 1s;
 }
 
-.transparent{
+.transparent {
     opacity: 0;
     transition-duration: 1s;
 }
 
-.link:hover{
+.link:hover {
     color: #6dae18;
 }
 
-.formstyle{
+.formstyle {
     background-color: #aa481e;
     padding: 15px;
     margin-bottom: 30px;
     color: #ffe7c7;
 }
 
-.nomargin{
+.nomargin {
     margin: 0;
     padding: 0;
 }

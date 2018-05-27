@@ -35,7 +35,6 @@
 
     <!-- Scripts -->
     <script src="scripts/animation.js"></script>
-    <script src="scripts/scrolling.js"></script>
 
     <!-- Our stylesheet (aka the most important)-->
     <link rel="stylesheet" href="style/main.css">
@@ -57,54 +56,51 @@
     </div>
 
     <!-- New Navigation -->
-    <nav id="nav" class="dropshadow navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand brandstamp" href="#"> <img class="brandstamp" src="images/logo.svg" alt=""></a>
+    <div id="nav" class="dropshadow navbar navbar-expand-lg sticky-top">
+        <nav class="centremargin">
+            <a class="navbar-nav brandstamp centrenav" href="index.html"> <img class="navimg" src="images/logo.svg" alt=""></a>
+
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item link">
+                        <a id="link1" class="link nav-link" href="section1.html" title="Future">Our Future</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link2" class="link nav-link" href="section2.html" title="Present">Our Present</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link3" class="link nav-link" href="section3.html" title="Stamp">Safety Ape Stamp</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link5" class="link nav-link" href="pledge.html" title="Pledge">Pledge</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link5" class="link nav-link" href="donate.html" title="Donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img class="navbar-toggler-icon" src="images/hamburger.svg"> <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item link">
-                    <a id="link1" class="link nav-link" href="#sec_one" title="Future">Our Future</a>
-                </li>
-
-                <li class="nav-item link">
-                    <a id="link2" class="link nav-link" href="#sec_two" title="Present">Our Present</a>
-                </li>
-
-                <li class="nav-item link">
-                    <a id="link3" class="link nav-link" href="#sec_three" title="Stamp">Safety Ape Stamp</a>
-                </li>
-
-                <li class="nav-item link">
-                    <a id="link5" class="link nav-link" href="pledge.html" title="Pledge">Pledge</a>
-                </li>
-
-                <li class="nav-item link">
-                    <a id="link5" class="link nav-link" href="donate.html" title="Donate">Donate</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
 
     <!-- Section One -->
-    <div class="section" id="sec_one" title="A Great Future">
-        <h2>We have a great future ahead</h2>
-        <div class="container">
+    <div class="section" title="A Great Future">
+        <div id="sec_one" class="container">
+            <h2>We have a great future ahead</h2>
             <div class="row">
 
                 <!-- Motion Graphic -->
-                <div id="motion1" class="videopadding col ">
-                    <video id="video1" class="dropshadow">
-                        <source src="video/index/sec_one.mp4" type="video/mp4">
-                    </video>
-
-                    <!-- Overlay -->
-                    <div id="overlay2" class="overlay opaque">
-                        <img src="images/play.svg" class="col-3">
-                    </div>
+                <div id="motion1" class="videopadding col">
+                    <img id="video1" class="dropshadow picture" src="images/Section3/image1.gif">
                 </div>
 
                 <!-- Text -->
@@ -114,28 +110,21 @@
                 </div>
 
             </div>
+            <!-- Dividing Line -->
+            <hr>
         </div>
 
-        <!-- Dividing Line -->
-        <hr>
     </div>
 
     <!-- Section Two -->
     <div class="section" id="sec_two" title="Dystopic Present">
-        <h2>We need to fix palm oil – fast</h2>
         <div class="container">
+            <h2>We need to fix palm oil – fast</h2>
             <div class="row">
 
                 <!-- Motion Graphic -->
                 <div id="motion2" class="videopadding col">
-                    <video id="video2" class="dropshadow">
-                        <source src="video/index/sec_two.mp4" type="video/mp4">
-                    </video>
-
-                    <!-- Overlay -->
-                    <div id="overlay3" class="overlay opaque">
-                        <img src="images/play.svg" class="col-3">
-                    </div>
+                    <img id="video2" class="dropshadow picture" src="images/Section3/image1.gif">
                 </div>
 
                 <!-- Text -->
@@ -145,28 +134,20 @@
                 </div>
 
             </div>
+            <!-- Dividing Line -->
+            <hr>
         </div>
-
-        <!-- Dividing Line -->
-        <hr>
     </div>
 
     <!-- Section Three -->
     <div class="section" id="sec_three" title="The Consequences">
-        <h2>Look out for the Stamp</h2>
         <div class="container">
+            <h2>Look out for the Stamp</h2>
             <div class="row">
 
                 <!-- Motion Graphic -->
                 <div id="motion3" class="videopadding col">
-                    <video id="video3" class="dropshadow">
-                        <source src="video/index/sec_three.mp4" type="video/mp4">
-                    </video>
-
-                    <!-- Overlay -->
-                    <div id="overlay4" class="overlay opaque">
-                        <img src="images/play.svg" class="col-3">
-                    </div>
+                    <img id="video3" class="dropshadow picture" src="images/Section3/image1.gif">
                 </div>
 
                 <!-- Text -->

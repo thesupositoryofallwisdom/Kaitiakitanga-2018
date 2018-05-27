@@ -7,15 +7,20 @@
     <meta lang="eng">
     <meta charset="UTF-8">
     <title>The Stamp - Safety Ape</title>
-    <meta name="description" content="A simple action to promote good palm oil.">    
+    <meta name="description" content="A simple action to promote good palm oil.">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
 
-   
+
     <!-- Bootstrap stuff for responsive design -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap JavaScript Plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     <!-- Google Fonts for testing fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
@@ -45,51 +50,56 @@
             <img src="images/play.svg" class="col-3">
         </div>
     </div>
-    
-    <!--Navigation -->
-    <nav id="nav" class="dropshadow navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand brandstamp" href="index.html"> <img class="brandstamp" src="images/logo.svg" alt=""></a>
+
+    <!-- New Navigation -->
+    <div id="nav" class="dropshadow navbar navbar-expand-lg sticky-top">
+        <nav class="centremargin">
+            <a class="navbar-nav brandstamp centrenav" href="index.html"> <img class="navimg" src="images/logo.svg" alt=""></a>
+
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item link">
+                        <a id="link1" class="link nav-link" href="section1.html" title="Future">Our Future</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link2" class="link nav-link" href="section2.html" title="Present">Our Present</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link3" class="link nav-link" href="section3.html" title="Stamp">Safety Ape Stamp</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link5" class="link nav-link" href="pledge.html" title="Pledge">Pledge</a>
+                    </li>
+
+                    <li class="nav-item link">
+                        <a id="link5" class="link nav-link" href="donate.html" title="Donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img class="navbar-toggler-icon" src="images/hamburger.svg"> <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item link">
-                    <a id="link1" class="link nav-link" href="section1.html" title="Future">Our Future</a>
-                </li>
+    </div>
 
-                <li class="nav-item link">
-                    <a id="link2" class="link nav-link" href="section2.html" title="Present">Our Present</a>
-                </li>
 
-                <li class="nav-item link">
-                    <a id="link3" class="link nav-link" href="section3.html" title="Stamp">Safety Ape Stamp</a>
-                </li>
-                
-                <li class="nav-item link">
-                    <a id="link5" class="link nav-link" href="pledge.html" title="Pledge">Pledge</a>
-                </li>
-                
-                <li class="nav-item link">
-                    <a id="link5" class="link nav-link" href="donate.html" title="Donate">Donate</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- Start Shit Here! -->
     <div id="sec_one" class="section" title="Title">
-        <h2>Look out for the Stamp</h2>
         <div id="content1" class="container fadeout">
+            <h2>Look out for the Stamp</h2>
             <div class="row">
-                
+
                 <!-- Picture -->
                 <div class="videopadding col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="dropshadow picture" src="images/Section3/image2.gif">
+                    <img class="dropshadow picture" src="images/Section3/image1.gif">
                 </div>
-                
+
                 <!-- Text -->
                 <div id="text1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <p>The Safety Ape Stamp was created because buying sustainably shouldn’t be hard. With Safety Ape approval, your ice cream or favourite lipstick is guaranteed to protect the primary rainforest, pay workers fairly, be environmentally friendly and generally guilt free!</p>
@@ -100,17 +110,17 @@
         <!-- Dividing Line -->
         <hr>
     </div>
-    
+
     <div id="sec_two" class="section" title="Title">
-        <h2>Saving the forest with your help</h2>
         <div id="content2" class="container fadeout">
+            <h2>Saving the forest with your help</h2>
             <div class="row">
 
                 <!-- Text -->
                 <div id="text2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <p>With your help, we can save the rainforest. All you have to do is buy Safety Ape approved. With every purchase, we speak louder against rainforest destruction and the deaths of orangutans. We can save the rainforest with your help. Join the movement of people buying sustainably.</p>
                 </div>
-                
+
                 <!-- Picture -->
                 <div class="videopadding col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <img class="dropshadow picture" src="images/Section3/image2.gif">
@@ -122,27 +132,27 @@
         <hr>
     </div>
 
-   <div id="sec_three" class="section" title="Title">
-        <h2>Top Safety Ape Approved Products</h2>
+    <div id="sec_three" class="section" title="Title">
         <div id="content3" class="container fadeout">
+            <h2>Top Safety Ape Approved Products</h2>
             <div class="row">
 
                 <!-- Text -->
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image2.gif">
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image3.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image2.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
             </div>
             <hr>
             <div class="row">
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
-                <img class="picture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
+                <img class="productpicture col-lg-4 col-md-4 col-sm-4 col-xs-4" src="images/Section3/image1.gif">
 
             </div>
         </div>
         <div class="padding"></div>
     </div>
-    
+
 
     <!-- Footer -->
     <footer id="footer" class="footer" title="Footer">
