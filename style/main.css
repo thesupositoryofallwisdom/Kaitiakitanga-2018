@@ -22,7 +22,7 @@ h2 {
 
 .section h2 {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     color: #6dae18;
 }
 
@@ -124,7 +124,7 @@ video {
     }
 
     .navbar-nav{
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
@@ -177,7 +177,7 @@ video {
 .navimg {
     width: 100px;
     height: 100px;
-    margin: -30px 0 0 0;
+    margin: -20px 0 0 0;
     align-content: right;
 }
 
@@ -189,16 +189,16 @@ video {
 /* Section Styling */
 
 .section {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .footer {
     background-color: #aa481e;
-    padding: 30px;
+    padding: 40px;
 }
 
 .padding {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 hr {
@@ -209,6 +209,9 @@ hr {
     margin-right: 30px;
 }
 
+.row{
+    padding: 0 0 40px 0;
+}
 
 
 
